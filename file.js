@@ -11,6 +11,7 @@ const dataFunc = (dataMeal) =>{
     console.log(dataMeal)
 
     const foodView = document.querySelector(".foodView")
+    foodView.innerHTML = ``;
     console.log(foodView)
         for(const data of dataMeal){
             const newDiv = document.createElement('div')
@@ -25,9 +26,19 @@ const dataFunc = (dataMeal) =>{
                     </div>
                 </div>
                 `
-            foodView.appendChild(newDiv)
-                    
+            foodView.appendChild(newDiv)    
         }
 }
 
-fromApi('chicken')
+const searchFood = () => {
+    const searchField = document.getElementById("searchField")
+    const searchValue =  searchField.value;
+    
+    fromApi(searchValue)
+    searchField.value = '';
+    console.log(searchValue)
+
+
+}
+
+fromApi()
