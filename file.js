@@ -28,7 +28,7 @@ const dataFunc = (dataMeal) =>{
                     <h5 class="">Area :  <span class="card-title fw-normal fs-5">${data.strArea}</span> </h5>
 
                     <a href="${data.strYoutube}" class="px-3 py-2  text-center rounded-3 fs-5 fw-normal border border-danger text-decoration-none">
-                                                          Recipe
+                                                         Get Recipe
                          <i class="fa-regular fa-circle-play mx-2" style="color: #f51414;"></i>
                      </a>
                     
